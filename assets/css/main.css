@@ -37,7 +37,7 @@ body{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #E56385;
     color: black;
 }
 
@@ -157,6 +157,7 @@ body{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 footer {
+overflow: hidden;
 clear: both;
 padding-top: 40px;
 background-color:#1C1C1C;
@@ -179,6 +180,7 @@ box-shadow: 0 0 10px rgba(000,000,000,0.4);
   border: 5px #900C3F solid;
 }
 footer p {
+overflow: hidden;
 color: #676767;
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
@@ -200,7 +202,7 @@ text-align: right;
 }
 
 .social li {
-display: inline;
+display: inline-block;
 padding-top: 90px;
 position: relative;
 text-align: center;

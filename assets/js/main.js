@@ -29,17 +29,39 @@ for(var i = 0; i<tablero.length; i++){
   divTablero.appendChild(fila);
 }  */
 
-//evento onclick
+/*pasos 
+aparecer tablero con onclick
+empezar a jugar ... unirlo con css */
 
-var tablero = function(){
 
+/*Validacion de formulario*/
+
+var numero=document.getElementById('botonentrada');
+numero.addEventListener('click', function(){
+  var num=document.getElementById('entrada').value;
+  if(num.length!=9){
+    alert("Ingrese un número de 9 dígitos");
+  }else{
+    var text=document.getElementById('input');
+    text.innerHTML = "Bien";
+    alert("Registro correcto");
+  }
 };
 
-//agregamos el tablero
-(function(){
-  var boton = document.getElementById("start");
-  boton.addEventListener("click",tablero);
 
+/*evento agregar tablero*/
+
+var imagen= document.createElement("img");
+imagen.setAttribute("src", "img/car.png");
+var bloq=document.getElementById("bloque");
+bloq.appendChild(imagen);
+
+var boton = document.getElementById("tablero");
+  boton.addEventListener("click",function(){
+    alert ("ingrese a tabla")
   }
+  
 
-}())
+//trae de hacerlo con arreglo, pero quedo en mejorarlo.
+
+  
